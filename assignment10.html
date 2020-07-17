@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset=utf-8 />
+<title>assignment 3</title>
+</head>
+<body>
+    <p>Enter your mark to get Grade</p>
+    <input type="number" id="num">
+    <button onclick="calculate()">Calculate</button>
+    <span id="click"></span>
+    <script>
+      function calculate(){
+          var num = document.getElementById("num").value;
+          if(num>=80 && num<=100)
+          document.getElementById("click").innerHTML="Grade is A";
+          else if(num>=60 && num<=80)
+          document.getElementById("click").innerHTML="Grade is B";
+          else if(num>=50 && num<=60)
+          document.getElementById("click").innerHTML="Grade is C";
+          else if(num>=40 && num<=50)
+          document.getElementById("click").innerHTML="Grade is D";
+          else document.getElementById("click").innerHTML="You are FAIL";
+      }
+    </script>
+</body>
+</html>
